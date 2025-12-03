@@ -5,7 +5,7 @@ CAMINHO_DESTINO=~/bin/docker
 rm -rf ${CAMINHO_DESTINO}
 mkdir -p ${CAMINHO_DESTINO}
 
-DOCKER_VERSION="29.1.1"
+DOCKER_VERSION="29.1.2"
 wget "https://download.docker.com/linux/static/stable/$(uname -m)/docker-${DOCKER_VERSION}.tgz"
 wget "https://download.docker.com/linux/static/stable/$(uname -m)/docker-rootless-extras-${DOCKER_VERSION}.tgz"
 
@@ -19,7 +19,7 @@ CAMINHO_DESTINO=~/.docker/cli-plugins
 rm -rf ${CAMINHO_DESTINO}
 mkdir -p ${CAMINHO_DESTINO}
 
-DOCKER_COMPOSE_VERSION="2.40.3"
+DOCKER_COMPOSE_VERSION="5.0.0"
 curl -SL https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-$(uname -m) -o ${CAMINHO_DESTINO}/docker-compose
 chmod +x ${CAMINHO_DESTINO}/docker-compose
 
